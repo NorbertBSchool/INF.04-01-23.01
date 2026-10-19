@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stationSpinner">
+        <item>Kierownik</item>
+        <item>Starszy programista</item>
+        <item>Młodszy programista</item>
+        <item>Tester</item>
+    </string-array>
+</resources>

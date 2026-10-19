@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/window_frame"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/group_box"
+                android:clipChildren="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-9dp"
+                    android:background="@color/window_background"
+                    android:paddingHorizontal="6dp"
+                    android:text="@string/group_employee_data"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="24dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:labelFor="@id/fnField"
+                            android:minWidth="88dp"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/label_first_name"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/fnField"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/field_background"
+                            android:importantForAutofill="no"
+                            android:inputType="textPersonName|textCapWords"
+                            android:minHeight="44dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="8dp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:labelFor="@id/lnField"
+                            android:minWidth="88dp"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/label_last_name"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/lnField"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/field_background"
+                            android:importantForAutofill="no"
+                            android:inputType="textPersonName|textCapWords"
+                            android:minHeight="44dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="8dp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:labelFor="@id/stationSpinner"
+                            android:minWidth="88dp"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/label_station"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/field_background"
+                            android:minHeight="44dp">
+
+                            <Spinner
+                                android:id="@+id/stationSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:minHeight="44dp"
+                                android:popupBackground="@color/white"
+                                android:spinnerMode="dropdown" />
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="end|center_vertical"
+                                android:layout_marginEnd="10dp"
+                                android:contentDescription="@string/label_station"
+                                android:src="@drawable/ic_arrow_down" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/group_box"
+                android:clipChildren="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-9dp"
+                    android:background="@color/window_background"
+                    android:paddingHorizontal="6dp"
+                    android:text="@string/group_password"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="24dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:labelFor="@id/lettersCountField"
+                            android:minWidth="88dp"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/label_length"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/lettersCountField"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/field_background"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:minHeight="44dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="8dp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/lettersCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:checked="true"
+                        android:text="@string/checkbox_letters"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        app:buttonTint="@color/button_background" />
+
+                    <CheckBox
+                        android:id="@+id/digitsCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/checkbox_digits"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        app:buttonTint="@color/button_background" />
+
+                    <CheckBox
+                        android:id="@+id/specialCharsCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/checkbox_special"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        app:buttonTint="@color/button_background" />
+
+                    <Button
+                        android:id="@+id/generateButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:minWidth="140dp"
+                        android:minHeight="44dp"
+                        android:paddingHorizontal="16dp"
+                        android:stateListAnimator="@null"
+                        android:text="@string/button_generate"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:backgroundTint="@color/button_background"
+                        app:cornerRadius="2dp"
+                        app:elevation="0dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:minHeight="48dp"
+                android:stateListAnimator="@null"
+                android:text="@string/button_confirm"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/button_background"
+                app:cornerRadius="2dp"
+                app:elevation="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

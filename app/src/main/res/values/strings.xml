@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">INF.04-01-23.01</string>
+    <string name="window_title">Dodaj pracownika</string>
+    <string name="group_employee_data">Dane pracownika</string>
+    <string name="group_password">Generowanie hasła</string>
+    <string name="label_first_name">Imię</string>
+    <string name="label_last_name">Nazwisko</string>
+    <string name="label_station">Stanowisko</string>
+    <string name="label_length">Ile znaków?</string>
+    <string name="checkbox_letters">Małe i wielkie litery</string>
+    <string name="checkbox_digits">Cyfry</string>
+    <string name="checkbox_special">Znaki specjalne</string>
+    <string name="button_generate">Generuj hasło</string>
+    <string name="button_confirm">Zatwierdź</string>
+    <string name="dialog_ok">OK</string>
+    <string name="error_length_title">Błąd przy generowaniu hasła</string>
+    <string name="error_length_message">Wprowadzona liczba znaków hasła jest nieprawidłowa. Podaj liczbę znaków większą od zera.</string>
+    <string name="employee_summary">Dane pracownika: %1$s %2$s %3$s Hasło: %4$s</string>
+</resources>
